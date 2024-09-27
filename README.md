@@ -1,3 +1,76 @@
+# React Interview Task
+
+## Overview
+
+This task involves building a React application that integrates with a provided REST API to manage customer data. The project is pre-configured with the necessary dependencies, and your goal is to implement the required functionality.
+
+## Instructions
+
+1. **Fork the Repository:** Start by forking the existing project repository provided.
+2. **Project Structure:** Follow the existing project structure, adhering to best practices for React and maintainable code.
+3. **Dependencies:** The base dependencies are already pre-installed. Feel free to add new dependencies if required.
+4. **API:** Use the provided REST API (from the Spring Boot backend task) to handle all customer-related requests.
+
+## Requirements
+
+### 1. Customer Form
+
+Create a form component for adding and updating customer details using **Formik** with the following fields:
+
+- **First Name:** (Required, Text input)
+- **Last Name:** (Required, Text input)
+- **Phone Number:** (Required, Text input)
+- **Email:** (Required, Text input, must be a valid email format)
+- **Age:** (Number input)
+- **Address:** (Required, Text input)
+- **Active:** (Checkbox, defaults to unchecked)
+
+### 2. Validation
+
+Implement form validation using **Yup** to ensure:
+
+- Required fields are filled out.
+- The email field contains a valid email format.
+- The phone number is correctly formatted.
+
+Validation errors **should be displayed on the form** next to the relevant input fields.
+
+### 3. Service Layer
+
+Use **axios** or **fetch** to interact with the REST API for:
+
+- **Creating** a new customer.
+- **Updating** an existing customer.
+- **Deleting** a customer.
+- **Fetching** customer details.
+
+### 4. Customer List
+
+Create a customer list component that fetches and displays a list of customers from the backend API. The list should support the following features:
+
+- Display customer details such as name, phone number, email, and address.
+- Provide an option to edit a customer, which populates the form with the customer’s existing data.
+- Provide an option to delete a customer with a confirmation alert.
+
+### 5. React Hooks
+
+Use **React hooks** exclusively (no class components) to handle component lifecycle, form submission, and API interaction.
+
+### 6. Error Handling
+
+Use **alert** for handling API request failures. Validation errors should be shown on the form itself.
+
+### 7. Unit Tests
+
+(Optional) Write unit tests for form validation, API interaction, and components using **Jest** and **React Testing Library**.
+
+## Task Completion
+
+Once the task is complete, create a pull request targeting the `develop` branch. Be sure to create a feature branch off of `develop` for your work.
+
+Good luck!
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
