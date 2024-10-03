@@ -5,7 +5,7 @@ import './App.css';
 import { About } from './components/about/about.component';
 import { Home } from './components/home/home.component';
 import { NotFound } from './components/not-found/not-found.component';
-
+import CustomerList from './components/CustomerList';
 
 function App() {
   return (
@@ -20,6 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/customer-form" element={<CustomerList />} />
       </Routes>
     </div>
   );
